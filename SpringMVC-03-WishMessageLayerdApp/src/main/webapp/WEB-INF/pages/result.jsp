@@ -8,5 +8,6 @@
 </head>
 <body>
 	Result :: ${wMsg}
+	<a href="welcome.htm">Home</a>
 </body>
 </html>
