@@ -18,7 +18,7 @@ public class SpringDataMongoDb01CrudOperationsApplication {
 //		System.out.println(service.insertCustomer(new CustomerDTO(103,"Shane","Beed",999483939L)));
 		
 		//Select
-//		service.getAllCustomers().forEach(System.out::println);
+		service.getAllCustomers().forEach(System.out::println);
 		
 		//Update
 //		CustomerDTO dto = new CustomerDTO();
@@ -29,7 +29,7 @@ public class SpringDataMongoDb01CrudOperationsApplication {
 //		System.out.println(service.updateCustomer(dto));
 		
 		//Delete
-		System.out.println(service.deleteCustomerById("60091edd35c8586b242f97ba"));
+//		System.out.println(service.deleteCustomerById("60091edd35c8586b242f97ba"));
 		((ConfigurableApplicationContext) ctx).close();
 	}
 }
