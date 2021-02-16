@@ -33,6 +33,8 @@ public class StudentServiceImpl implements IStudentService {
 			dto.setResult(bo.getResult());
 			listDTO.add(dto);
 		});
+		System.out.println(listBO);
+		System.out.println(listDTO);
 		return listDTO;
 	}
 
