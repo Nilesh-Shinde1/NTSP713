@@ -4,8 +4,9 @@ import lombok.Data;
 
 @Data
 public class Student {
-	private int sno;
+	private Integer sno;
 	private String sname;
-	private float age;
+	private String add;
+	private Float avg;
 	
 }
