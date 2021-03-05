@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+	<definition name="baseDef" template="/WEB-INF/pages/layout.jsp">
+		<put-attribute name="title" value="" />  
+        <put-attribute name="header" value="/WEB-INF/pages/header.jsp" />  
+        <put-attribute name="menu" value="/WEB-INF/pages/menu.jsp" />  
+        <put-attribute name="body" value="/WEB-INF/pages/body.jsp" />  
+        <put-attribute name="footer" value="/WEB-INF/pages/footer.jsp" />  
+	</definition>
+	<definition name="javaDef" extends="baseDef">
+		<put-attribute name="title" value="Java Courses" />  
+        <put-attribute name="body" value="/WEB-INF/pages/java_courses.jsp" />  
+	</definition>
+	<definition name="dotNetDef" extends="baseDef">
+		<put-attribute name="title" value=".Net Courses" />  
+        <put-attribute name="body" value="/WEB-INF/pages/dotNet_courses.jsp" />  
+	</definition>
+	<definition name="oracleDef" extends="baseDef">
+		<put-attribute name="title" value="Oracle Courses" />  
+        <put-attribute name="body" value="/WEB-INF/pages/oracle_courses.jsp" />  
+	</definition>
+</tiles-definitions>
